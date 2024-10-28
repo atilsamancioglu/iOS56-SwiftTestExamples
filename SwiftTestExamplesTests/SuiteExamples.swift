@@ -9,8 +9,15 @@ import Testing
 
 struct SuiteExamples {
 
-    @Test func <#test function name#>() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
-    }
+    
+}
 
+@Suite("Student VM Tests") struct StudentViewModelTests {
+  @Suite("Student From ID Success") struct Success {
+    @Test func getStudentDetails() {  }
+  }
+  @Suite("Student From ID Failure") struct Failure {
+    @Test func showFailureMessageToUser() {  }
+    @Test func retryWithAnotherId() {  }
+  }
 }

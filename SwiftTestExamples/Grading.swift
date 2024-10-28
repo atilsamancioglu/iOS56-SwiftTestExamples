@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class Grading {
+    static let shared = Grading()
+    var isAvailable : Bool = false
+    private init() {}
+}
